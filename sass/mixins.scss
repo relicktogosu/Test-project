@@ -1,8 +1,7 @@
 $mobile: 360px;
 $md: 768px;
 $lg: 960px;
-$xl: 1366px;
-$xxl: 1440px;
+$xl: 1440px;
 $desktop: 1920px;
 
 @mixin adaptive($media) {
@@ -20,10 +19,6 @@ $desktop: 1920px;
         }
     @else if $media == xl {
         @media only screen and (min-width: $xl)
-            { @content; }
-        }
-    @else if $media == xxl {
-        @media only screen and (min-width: $xxl)
             { @content; }
         }
 	@else if $media == desktop {

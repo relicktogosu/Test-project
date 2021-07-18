@@ -1,0 +1,282 @@
+.section-outer {
+    width: 100%;
+}
+
+.section-inner {
+    width: 100%;
+    padding: 0 16px;
+    @include adaptive(md) {
+        padding: 0 39px;
+    }
+    @include adaptive(lg) {
+        padding: 0 98px;
+    }
+    @include adaptive(xl) {
+        padding: 0 140px;
+    }
+    @include adaptive(desktop) {
+        padding: 0 255px;
+    }
+}
+
+.header__burger span, .header__burger::after, .header__burger::before {
+    height: 1px;
+    width: 100%;
+    background: #000;
+    margin: 0 auto;
+    font-size: 1px;
+    position: absolute;
+}
+
+.header__burger span {
+    bottom: 8.5px;
+}
+
+.header__burger::after, .header__burger::before {
+    content: '';
+}
+
+.header__burger::after {
+    bottom: 14px;
+}
+
+.header__burger::before {
+    top: 8px;
+}
+
+.header__burger.open-menu span {
+    opacity:0; 
+    transition: 0.4s; 
+}
+
+.header__burger.open-menu::before {
+    transform: rotate(-38deg);
+    top: 6px;
+    transition: 0.5s;
+}
+
+.header__burger.open-menu::after {
+    transform: rotate(38deg);
+    bottom: 6px;
+    transition: 0.5s;
+}
+
+.header {
+    width: 100%;
+    background-image: url("../img/virna-bg-header.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 455px;
+    @include adaptive(md) {
+        background-image: url("../img/virna-bg-header768.svg");
+    }
+    @include adaptive(lg) {
+        background-image: url("../img/virna-bg-header960.svg");
+        height: 487px;
+    }
+    @include adaptive(xl) {
+        background-image: url("../img/virna-bg-header1440.svg");
+        height: 807px;
+    }
+    @include adaptive(desktop) {
+        background-image: url("../img/virna-bg-header1920.svg");
+        height: 1055px;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-section {
+        &__logo {
+            padding: 37px 0 53px 0;
+            @include adaptive(md) {
+                padding-bottom: 60px;
+            }
+            @include adaptive(lg) {
+                padding-bottom: 80px;
+            }
+            @include adaptive(xl) {
+                padding-bottom: 152px;
+            }
+            @include adaptive(desktop) {
+                padding-bottom: 217px;
+            }
+
+        }
+        &__title {
+            @include adaptive(mobile) {
+                visibility: hidden;
+            };
+            @include adaptive(lg) {
+                font-size: 48px;
+            };
+            @include adaptive(xl) {
+                font-size: 72px;
+            };
+            font-size: 42px;
+            font-family: CeraPro;
+            text-align: left;
+            font-weight: 700;
+            font-style: normal;
+        }
+        &__subtitle {
+            @include adaptive(mobile) {
+                visibility: hidden;
+            };
+            @include adaptive(lg) {
+                font-size: 14px;
+            };
+            font-family: CeraPro;
+            font-weight: 500;
+            font-size: 13px;
+            text-align: right;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            margin-top: 13px;
+        }
+        &-nav {
+            height: 100vh;
+            position: absolute;
+            background-color: #fff;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            transition: all 0.75s ease 0s;
+            overflow: auto;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            &-menu {
+                text-align: center;
+                list-style: none;
+                &__item {
+                    margin: 35px 0 35px 0;
+                }
+                &__link {
+                    &:hover {
+                    cursor: default;
+                    }
+                    text-decoration: none;
+                    font-family: CeraPro;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &-aside {
+        &__logo-bonum {
+            position: absolute;
+            top: 34px;
+            right: 16px;
+            @include adaptive(md) {
+                right: 39px;
+            }
+            @include adaptive(lg) {
+                right: 98px;
+            }
+            @include adaptive(xl) {
+                right: 140px;
+            }
+            @include adaptive(desktop) {
+                right: 255px;
+            }
+        }
+        &__content {
+            @include adaptive(xl) {
+                visibility: hidden;
+            }
+            writing-mode: vertical-rl;
+            padding-top: 143px;
+            font-family: CeraPro;
+            font-size: 14px;
+        }
+        &__year {
+            @include adaptive(xl) {
+                visibility: hidden;
+            }
+            writing-mode: vertical-rl;
+            padding-top: 41px;
+            font-family: CeraPro;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    &__burger {
+        width: 18px;
+        height: 13px;
+        display: inline-block;
+        position: relative;
+        @include adaptive(md) {
+            margin-right: 60-18px;
+        }
+        @include adaptive(xl) {
+            margin-right: 80-18px;
+        }
+        @include adaptive(desktop) {
+            margin-right: 115px;
+        }
+    }
+    &-social {
+        margin: 110px 0 0 16px;
+        display: flex;
+        padding-left: 12px;
+        justify-content: space-between;
+        @include adaptive(md) {
+            justify-content: flex-start;
+            margin: 110px 0 0 39-16px;
+        }
+        @include adaptive(lg) {
+            margin: 165px 0 0 98-16px;
+        }
+        @include adaptive(xl) {
+            margin: 270px 0 0 140-16px;
+        }
+        @include adaptive(desktop) {
+            margin: 450px 0 0 255-16px;
+        }
+        &-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-left: 18px;
+            display: inline-block;
+            @include adaptive(desktop) {
+                margin: 0;
+            }
+            &:hover {
+                transform: scale(1.5);
+                transition: 0.5s;
+            }
+            &__link {}
+        }
+        &-lang {
+            width: 25px;
+            margin-right: 24px;
+            @include adaptive(md) {
+                margin: 0;
+                flex-basis: 65+38px;
+                text-align: right;
+            }
+            @include adaptive(xl) {
+                flex-basis: 208+38px;
+            }
+            @include adaptive(desktop) {
+                flex-basis: 285+38px;
+            }
+            &-list {
+                background-color: #fff;
+                &:focus {
+                    @include adaptive(mobile) {
+                        outline: none;
+                    }
+                }
+                border: none;
+                font-family: CeraPro;
+                font-size: 14px;
+                width: 38px;
+                line-height: 18px;
+            }
+        }
+    }
+}

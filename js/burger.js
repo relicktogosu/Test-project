@@ -5,5 +5,6 @@ $(document).ready(function() {
         $('.header-aside__logo-bonum').toggleClass('open-menu');
         $('body').toggleClass('fixed-page');
         $('.main-section-content-vword').toggleClass('open-menu');
+        $('.main-section-content-block-filter__title-v').toggleClass('open-menu');
     });
 });

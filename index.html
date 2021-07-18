@@ -17,8 +17,8 @@
                 <h2 class="header-section__subtitle">of&nbsp;women&rsquo;s<br> clothing</h2>
                 <nav class="header-section-nav">
                     <ul class="header-section-nav-menu">
-                        <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#">target</a></li>
-                        <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#">colors</a></li>
+                        <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#maintarget">target</a></li>
+                        <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#colors">colors</a></li>
                         <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#">typography</a></li>
                         <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#">grid</a></li>
                         <li class="header-section-nav-menu__item"><a class="header-section-nav-menu__link" href="#">main-page</a></li>
@@ -58,7 +58,19 @@
                 <p class="main-section-content-text">Основная деятельность заказчика такая. У него есть такие проблемы. При создании нового дизайна учитывались такие факторы - фактор1, фактор2 и фактор3.</p>
                 <p class="main-section-content-vword">1920</p>
                 <div class="main-section-content-block">
-                    <img src="img/img_main_girl-w-hat.svg" width="180px" height="240px" alt="Girl with hat" class="main-section-content-block-pic">
+                    <picture>
+                        <source media="(min-width: 360px) and (max-width: 767.98px)"
+                            srcset="img/img_main_girl-w-hat.png">   
+                        <source media="(min-width: 768px) and (max-width: 959.98px)"
+                            srcset="img/img_main_girl-w-hat768.png">
+                        <source media="(min-width: 960px) and (max-width: 1439.98px)"
+                            srcset="img/img_main_girl-w-hat960.png">
+                        <source media="(min-width: 1440px) and (max-width: 1919.98px)"
+                            srcset="img/img_main_girl-w-hat1440.png">
+                        <source media="(min-width: 1920px)"
+                            srcset="img/img_main_girl-w-hat1920.png">
+                        <img src="img/img_main_girl-w-hat1920.png" alt="Girl with hat" class="main-section-content-block-pic">
+                    </picture>
                     <div class="main-section-content-block-filter">
                         <div class="main-section-content-block-filter__title">
                             <div class="main-section-content-block-filter__title-v">FILTERS</div>
@@ -109,12 +121,38 @@
                         </label>
                     </div>
                 </div>
-                <img class="main-section-content-img" src="img/img_main_girl-2.svg" width="327px" height="400px" alt="dressed girl">
+                <picture>
+                    <source media="(min-width: 360px) and (max-width: 767.98px)"
+                        srcset="img/img_main_girl-2.png">   
+                    <source media="(min-width: 768px) and (max-width: 959.98px)"
+                        srcset="img/img_main_girl-2768.png">
+                    <source media="(min-width: 960px) and (max-width: 1439.98px)"
+                        srcset="img/img_main_girl-2960.png">
+                    <source media="(min-width: 1440px) and (max-width: 1919.98px)"
+                        srcset="img/img_main_girl-21440.png">
+                    <source media="(min-width: 1920px)"
+                        srcset="img/img_main_girl-21920.png">
+                    <img class="main-section-content-img" src="img/img_main_girl-21920.png" alt="dressed girl">
+                </picture>
                 <p class="main-section-content-phrase">is women from stories</p>
                 <div class="main-section-content-pcard__wrapper">
                     <div class="main-section-content-pcard">
                         <div class="main-section-content-pcard-head">
-                            <div class="main-section-content-pcard-head__img"> <img src="img/pcard-img.svg" alt="product card image"> </div>
+                            <div class="main-section-content-pcard-head__img">
+                                <picture>
+                                    <source media="(min-width: 360px) and (max-width: 767.98px)"
+                                        srcset="img/pcard-img.png">   
+                                    <source media="(min-width: 768px) and (max-width: 959.98px)"
+                                        srcset="img/pcard-img768-960.png">
+                                    <source media="(min-width: 960px) and (max-width: 1439.98px)"
+                                        srcset="img/pcard-img768-960.png">
+                                    <source media="(min-width: 1440px) and (max-width: 1919.98px)"
+                                        srcset="img/pcard-img1440.png">
+                                    <source media="(min-width: 1920px)"
+                                        srcset="img/pcard-img1920.png">
+                                    <img src="img/pcard-img1920.png" alt="product card image">
+                                </picture>
+                            </div>
                             <div class="main-section-content-pcard-head__title">product card</div>
                         </div>
                         <div class="main-section-content-pcard-spec">
