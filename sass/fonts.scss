@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff') format("WOFF"),
+		 url('../fonts/Montserrat-Regular.woff2') format("WOFF2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro';
+	src: url('../fonts/CeraPro-Regular.woff') format("WOFF"),
+	 	 url('../fonts/CeraPro-Regular.woff2') format("WOFF2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro';
+	src: url('../fonts/CeraPro-Light.woff') format("WOFF"),
+		 url('../fonts/CeraPro-Light.woff2') format("WOFF2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro';
+	src: url('../fonts/CeraPro-Medium.woff') format("WOFF"),
+		url('../fonts/CeraPro-Medium.woff2') format("WOFF2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro';
+	src: url('../fonts/CeraPro-Bold.woff') format("WOFF"),
+		 url('../fonts/CeraPro-Bold.woff2') format("WOFF2");
+	font-weight: 700;
+	font-style: normal;
+}
