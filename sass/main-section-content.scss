@@ -330,12 +330,6 @@
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: column;
-                @include adaptive(md) {
-                    display: inline-flex;
-                    float: right;
-                    position: relative;
-                    bottom: 426px;
-                }
             }
             &-head {
                 margin-bottom: 30px;
